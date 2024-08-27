@@ -1,13 +1,14 @@
 import face1 from "../../assets/images/face-male-1.jpg";
+import StyledAvatar, {AvatarClip, AvatarImage, StatusIcon} from "./style.js";
 
 function Avatar(){
     return (
-        <div>
-            <div></div>
-            <div>
-                <img src={face1} alt=""/>
-            </div>
-        </div>
+        <StyledAvatar>
+            <StatusIcon/>
+            <AvatarClip>
+                <AvatarImage src={face1} alt=""/>
+            </AvatarClip>
+        </StyledAvatar>
     )
 }
 

@@ -1,13 +1,13 @@
-/** @type { import('@storybook/react').Preview } */
-const preview = {
-  parameters: {
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
-    },
-  },
-};
+import {ThemeProvider} from "styled-components";
+import theme from "../src/theme.js";
 
-export default preview;
+export const decorators = [
+    (Story) => {
+        console.log("theme", theme)
+        return (
+            <ThemeProvider theme={theme}>
+                <Story/>
+            </ThemeProvider>
+        )
+    },
+];
