@@ -9,3 +9,8 @@
 
 ![](images/docs/TODO/IMG-20240827225706591.png)
 
+## components
+
+### structure
+![](images/docs/TODO/IMG-20240827230231930.png)
+
