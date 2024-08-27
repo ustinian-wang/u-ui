@@ -1,24 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import {Button} from "./Button.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <Button label={'label1'} width={'120px'}>按钮</Button>
+          <Button label={'label2'}>按钮</Button>
+      </div>
   );
 }
 
