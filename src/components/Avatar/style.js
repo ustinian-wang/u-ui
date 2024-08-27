@@ -34,8 +34,8 @@ const StatusIcon = styled.div`
     }
 `;
 const AvatarClip = styled.div`
-    width: 48px;
-    height: 48px;
+    width: ${({size})=>size};
+    height: ${({size})=>size};
     -webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;
     overflow: hidden;
 `;

@@ -1,12 +1,20 @@
-import face1 from "../../assets/images/face-male-1.jpg";
+// import face1 from "../../assets/images/face-male-1.jpg";
 import StyledAvatar, {AvatarClip, AvatarImage, StatusIcon} from "./style.js";
 
-function Avatar(){
+function Avatar({
+    src,
+    size="48px",
+    status,
+    statusIconSize="8px",
+    ...rest
+                }){
     return (
-        <StyledAvatar>
-            <StatusIcon/>
-            <AvatarClip>
-                <AvatarImage src={face1} alt=""/>
+        <StyledAvatar {...rest}>
+            {(status &&
+                <StatusIcon status={status} size={statusIconSize}/>
+            )}
+            <AvatarClip size={size}>
+                <AvatarImage src={src} alt=""/>
             </AvatarClip>
         </StyledAvatar>
     )
