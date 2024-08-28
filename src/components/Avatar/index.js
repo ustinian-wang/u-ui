@@ -1,5 +1,6 @@
 // import face1 from "../../assets/images/face-male-1.jpg";
 import StyledAvatar, {AvatarClip, AvatarImage, StatusIcon} from "./style.js";
+import PropTypes from "prop-types";
 
 function Avatar({
     src,
@@ -21,7 +22,10 @@ function Avatar({
 }
 
 Avatar.propsType = {
-
+    src: PropTypes.string.isRequired,
+    size: PropTypes.string,
+    status: PropTypes.oneOf(["online", "offline"]),
+    statusIconSize: PropTypes.string
 }
 
 export default Avatar
