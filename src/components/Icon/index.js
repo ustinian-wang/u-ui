@@ -4,18 +4,20 @@ import StyledIcon from "./style.js";
 
 
 function Icon({
-    children,
+    icon: IconComponent,
+    width = 24,
+    height = 24,
+    color,
+    opacity,
     ...rest
-                }){
+              }) {
     return (
-        <StyledIcon {...rest}>
-            {children}
+        <StyledIcon color={color} opacity={opacity} {...rest}>
+            {IconComponent && <IconComponent width={width} height={height}/>}
         </StyledIcon>
     )
 }
 
-Icon.propsType = {
-    children:  PropTypes.any
-}
+Icon.propsType = {}
 
 export default Icon
