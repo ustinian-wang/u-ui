@@ -1,4 +1,3 @@
-// import face1 from "../../assets/images/face-male-1.jpg";
 import StyledAvatar, {AvatarClip, AvatarImage, StatusIcon} from "./style.js";
 import PropTypes from "prop-types";
 
