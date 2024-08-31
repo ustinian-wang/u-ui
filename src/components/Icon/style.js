@@ -9,6 +9,7 @@ const StyledIcon = styled.div`
         ${({color})=>(color?`fill: ${color}`:"")};
         ${({opacity})=>(opacity?`opacity: ${opacity}`:"")};
     }
+        
 `;
 
 export default StyledIcon
