@@ -62,3 +62,27 @@ Loaded templates: C:\Users\jser\Desktop\gitDemo\u-ui\_templates
 
 ```
 
+## Icon
+
+### 引入fontawesome
+
+> 安装依赖
+
+![](images/docs/TODO/IMG-20240831153036713.png)
+
+> 添加用例
+
+>> icon.styles.js
+
+```javascript 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";  
+import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
+export const FontAwesome = () => {  
+    return <FontAwesomeIcon icon={ faCommentDots }></FontAwesomeIcon>  
+}
+```
+
+> 预览
+
+![](images/docs/TODO/IMG-20240831153340254.png)
+

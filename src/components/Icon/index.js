@@ -18,6 +18,12 @@ function Icon({
     )
 }
 
-Icon.propsType = {}
+Icon.propsType = {
+    icon: PropTypes.element,
+    width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    color: PropTypes.string,
+    opacity: PropTypes.number
+}
 
 export default Icon
