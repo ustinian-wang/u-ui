@@ -8,7 +8,7 @@ export default {
     component: NavBar
 }
 
-export const Default = ()=> <NavBar>默认</NavBar>
+export const Default = ()=> <NavBar/>
 
 export const Menu = ()=>{
     //如果我想访问主题中的颜色，但是不想创建styleComponent，怎么实现？

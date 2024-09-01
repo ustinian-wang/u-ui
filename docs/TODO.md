@@ -92,6 +92,9 @@ export const FontAwesome = () => {
 
  版本6+删除了macro，会导致storybook跑不起来
 
+### Q: 为什么6+的删除macro？删除之后使用什么方式替代？
+
+
 ## 版本更新
 
 > 检查更新
