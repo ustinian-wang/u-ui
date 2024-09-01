@@ -86,3 +86,18 @@ export const FontAwesome = () => {
 
 ![](images/docs/TODO/IMG-20240831153340254.png)
 
+## styled-components
+
+> 版本5.0.0+
+
+ 版本6+删除了macro，会导致storybook跑不起来
+
+## 版本更新
+
+> 检查更新
+
+检查大版本修改
+
+`yarn upgrade-interactive --latest`
+
+
