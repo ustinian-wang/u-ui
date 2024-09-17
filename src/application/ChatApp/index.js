@@ -5,7 +5,6 @@ import NavBar from "components/NavBar";
 import MessageList from "components/MessageList";
 import Conversation from "components/Conversation";
 import Profile from "components/Profile";
-import { Route, Routes, useLocation } from "react-router-dom";
 import ContactList from "components/ContactList";
 import FileList from "components/FileList";
 import NoteList from "components/NoteList";
@@ -13,6 +12,7 @@ import EditProfile from "components/EditProfile";
 import Settings from "components/Settings";
 import BlockedList from "components/BlockedList";
 import VideoCall from "components/VideoCall";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { useTransition, animated } from "react-spring";
 
 function ChatApp({ children, ...rest }) {
