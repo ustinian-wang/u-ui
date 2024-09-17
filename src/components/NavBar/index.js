@@ -1,10 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 import StyledNavBar, { MenuIcon, MenuItems, StyledMenuItem } from "./style.js";
 import Badge from "../Badge";
 import Avatar from "../Avatar";
 import profileImage from "../../assets/images/face-male-1.jpg"
-import { faCommentDots, faDog, faEllipsisH, faFolder, faStickyNote, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faCog, faCommentDots, faEllipsisH, faFolder, faStickyNote, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { Link, useLocation, matchPath } from "react-router-dom";
 
 
 function NavBar({
@@ -12,27 +12,42 @@ function NavBar({
                 }){
     return (
         <StyledNavBar {...rest}>
-            <Avatar src={profileImage} status="online"></Avatar>
-            <MenuItems>
-                <MenuItem showBadge active icon={faCommentDots}></MenuItem>
-                <MenuItem icon={faUsers}></MenuItem>
-                <MenuItem icon={faFolder}></MenuItem>
-                <MenuItem icon={faStickyNote}></MenuItem>
-                <MenuItem icon={faEllipsisH}></MenuItem>
-                <MenuItem icon={faDog} css={`align-self: end `}></MenuItem>
-            </MenuItems>
+            <Avatar src={profileImage} status="online"></Avatar><MenuItems>
+            <MenuItem to="/" showBadge icon={faCommentDots} />
+            <MenuItem to="/contacts" icon={faUsers} />
+            <MenuItem to="/files" icon={faFolder} />
+            <MenuItem to="/notes" icon={faStickyNote} />
+            <MenuItem icon={faEllipsisH} />
+            <MenuItem
+                to="/settings"
+                icon={faCog}
+                css={`
+                    align-self: end;
+                  `}
+            />
+        </MenuItems>
         </StyledNavBar>
     )
 }
 
-function MenuItem({icon, active, showBadge, ...rest}){
+function MenuItem({ to = "#", icon, showBadge, ...rest }){
+    // get current location
+    const loc = useLocation();
+    // check current menu is active
+    const active = !!matchPath(
+        {
+            path: to,
+            end: true,
+        },
+        loc.pathname
+    );
     return (
         <StyledMenuItem active={active} {...rest}>
-            <a href="#">
+            <Link to={to}>
                 <Badge show={showBadge}>
                     <MenuIcon active={active} icon={icon}></MenuIcon>
                 </Badge>
-            </a>
+            </Link>
         </StyledMenuItem>
     )
 }

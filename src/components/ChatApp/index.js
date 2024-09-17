@@ -35,6 +35,7 @@ function ChatApp({ children, ...rest }) {
       <Sidebar>
         {transitions(({ item, props }) => (
           <animated.div style={props}>
+            {/* defined view of related router */}
             <Routes location={item}>
               <Route path="/" element={<MessageList />} />
               <Route path="/contacts" element={<ContactList />} />
