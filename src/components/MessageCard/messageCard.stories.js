@@ -4,7 +4,7 @@ import MessageCard from ".";
 import face1 from "assets/images/face-male-1.jpg";
 
 export default {
-  title: "UI 组件/MessageCard",
+  title: "component/MessageCard",
   component: MessageCard,
 };
 

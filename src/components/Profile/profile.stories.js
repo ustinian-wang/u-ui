@@ -2,7 +2,7 @@ import React from "react";
 import Profile from "./index";
 
 export default {
-  title: "页面组件/Profile",
+  title: "page/Profile",
   component: Profile,
 };
 

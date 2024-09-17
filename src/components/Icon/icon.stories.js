@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentDots, faFolder, faStickyNote } from "@fortawesome/free-solid-svg-icons";
 
 export default {
-    title: "UI 组件/Icon", component: Icon
+    title: "component/Icon", component: Icon
 }
 
 export const Default = () => <Icon icon={ SmileIcon }/>

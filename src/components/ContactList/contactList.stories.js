@@ -2,7 +2,7 @@ import React from "react";
 import ContactList from ".";
 
 export default {
-  title: "页面组件/ContactList",
+  title: "organization/ContactList",
   component: ContactList,
 };
 

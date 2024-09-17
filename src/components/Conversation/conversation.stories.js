@@ -2,7 +2,7 @@ import React from "react";
 import Conversation from ".";
 
 export default {
-  title: "页面组件/Conversation",
+  title: "page/Conversation",
   component: Conversation,
 };
 

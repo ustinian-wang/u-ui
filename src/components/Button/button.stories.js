@@ -5,7 +5,7 @@ import { ReactComponent as Plus } from "assets/icons/plus.svg";
 import Icon from "components/Icon";
 
 export default {
-  title: "UI 组件/Button",
+  title: "component/Button",
   component: Button,
 };
 

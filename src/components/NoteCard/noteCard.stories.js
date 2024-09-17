@@ -2,7 +2,7 @@ import React from "react";
 import NoteCard from ".";
 
 export default {
-  title: "UI 组件/NoteCard",
+  title: "component/NoteCard",
   component: NoteCard,
 };
 

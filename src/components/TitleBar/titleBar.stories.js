@@ -2,7 +2,7 @@ import React from "react";
 import TitleBar from ".";
 
 export default {
-  title: "UI 组件/TitleBar",
+  title: "component/TitleBar",
   component: TitleBar,
 };
 

@@ -8,7 +8,7 @@ import Icon from "components/Icon";
 import { ReactComponent as Plus } from "assets/icons/plus.svg";
 
 export default {
-  title: "UI 组件/Filter",
+  title: "component/Filter",
   component: Filter,
 };
 

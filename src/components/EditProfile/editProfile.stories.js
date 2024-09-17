@@ -2,7 +2,7 @@ import React from "react";
 import EditProfile from ".";
 
 export default {
-  title: "页面组件/EditProfile",
+  title: "page/EditProfile",
   component: EditProfile,
 };
 

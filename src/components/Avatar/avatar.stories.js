@@ -6,7 +6,7 @@ import face4 from "../../assets/images/face-male-4.jpg";
 import "../../story.css";
 
 export default {
-    title: "UI 组件/Avatar",
+    title: "component/Avatar",
     component: Avatar,
 }
 

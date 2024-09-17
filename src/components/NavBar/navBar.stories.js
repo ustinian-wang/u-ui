@@ -4,7 +4,7 @@ import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 import "styled-components/macro";
 
 export default {
-    title: "页面组件/NavBar",
+    title: "organization/NavBar",
     component: NavBar
 }
 

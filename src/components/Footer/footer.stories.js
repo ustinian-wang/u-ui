@@ -2,7 +2,7 @@ import React from "react";
 import Footer from ".";
 
 export default {
-  title: "页面组件/Footer",
+  title: "organization/Footer",
   component: Footer,
 };
 

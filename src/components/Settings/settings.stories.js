@@ -2,7 +2,7 @@ import React from "react";
 import Settings, { SettingsItem } from ".";
 
 export default {
-  title: "页面组件/Settings",
+  title: "page/Settings",
   component: Settings,
 };
 
