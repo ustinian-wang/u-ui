@@ -1,75 +1,80 @@
 {
-  "name": "@ustinian-wang/u-ui",
-  "version": "0.1.0",
-  "description": "components for IM",
-  "author": "ustinian-wang <wangjser@gmail.com>",
-  "module": "./index.js",
-  "files": [
-    "*"
-  ],
-  "keywords": [
-    "@ustinian-wang/u-ui"
-  ],
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-brands-svg-icons": "^6.6.0",
-    "@fortawesome/free-regular-svg-icons": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2",
-    "react-scripts": "5.0.1",
-    "react-spring": "^9.7.4",
-    "styled-components": "5.3.5",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "name": "@ustinian-wang/u-ui",
+    "version": "0.1.0",
+    "description": "components for IM",
+    "module": "./index.js",
+    "files": [
+        "*"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@chromatic-com/storybook": "1.7.0",
-    "@storybook/addon-essentials": "^8.2.9",
-    "@storybook/addon-interactions": "^8.2.9",
-    "@storybook/addon-links": "^8.2.9",
-    "@storybook/addon-onboarding": "^8.2.9",
-    "@storybook/blocks": "^8.2.9",
-    "@storybook/preset-create-react-app": "^8.2.9",
-    "@storybook/react": "^8.2.9",
-    "@storybook/react-webpack5": "^8.2.9",
-    "@storybook/test": "^8.2.9",
-    "babel-plugin-styled-components": "^2.1.4",
-    "eslint-plugin-storybook": "^0.8.0",
-    "prop-types": "15.8.1",
-    "storybook": "^8.3.1",
-    "webpack": "5.94.0"
-  },
-  "license": "MIT"
+    "author": "ustinian-wang <wangjser@gmail.com> (https://github.com/ustinian-wang)",
+    "repository": "git@github.com:ustinian-wang/ucli.git",
+    "keywords": [
+        "@ustinian-wang/u-ui"
+    ],
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.6.0",
+        "@fortawesome/free-brands-svg-icons": "^6.6.0",
+        "@fortawesome/free-regular-svg-icons": "^6.6.0",
+        "@fortawesome/free-solid-svg-icons": "^6.6.0",
+        "@fortawesome/react-fontawesome": "^0.2.2",
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.26.2",
+        "react-scripts": "5.0.1",
+        "react-spring": "^9.7.4",
+        "styled-components": "5.3.5",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest",
+            "plugin:storybook/recommended"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@chromatic-com/storybook": "1.7.0",
+        "@storybook/addon-essentials": "^8.2.9",
+        "@storybook/addon-interactions": "^8.2.9",
+        "@storybook/addon-links": "^8.2.9",
+        "@storybook/addon-onboarding": "^8.2.9",
+        "@storybook/blocks": "^8.2.9",
+        "@storybook/preset-create-react-app": "^8.2.9",
+        "@storybook/react": "^8.2.9",
+        "@storybook/react-webpack5": "^8.2.9",
+        "@storybook/test": "^8.2.9",
+        "babel-plugin-styled-components": "^2.1.4",
+        "eslint-plugin-storybook": "^0.8.0",
+        "prop-types": "15.8.1",
+        "storybook": "^8.3.1",
+        "webpack": "5.94.0"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    }
 }
