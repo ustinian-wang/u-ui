@@ -1,13 +1,17 @@
 import './App.css';
-import {Button} from "./Button.js";
+import { BrowserRouter as Router } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import ChatApp from "./components/ChatApp";
+import theme from "../src/theme.js";
 
 function App() {
-  return (
-      <div>
-          <Button label={'label1'} width={'120px'}>按钮</Button>
-          <Button label={'label2'}>按钮</Button>
-      </div>
-  );
+    return (
+        <Router>
+            <ThemeProvider theme={theme}>
+                <ChatApp />
+            </ThemeProvider>
+        </Router>
+    );
 }
 
 export default App;

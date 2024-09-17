@@ -3,14 +3,18 @@ import theme from "../src/theme.js";
 
 //覆盖样式
 import "../src/story.css";
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 export const decorators = [
     (Story) => {
-        console.log("theme", theme)
         return (
-            <ThemeProvider theme={theme}>
-                <Story/>
-            </ThemeProvider>
+            <Router>
+                <ThemeProvider theme={theme}>
+                    <Story/>
+                </ThemeProvider>
+            </Router>
+
         )
     },
 ];

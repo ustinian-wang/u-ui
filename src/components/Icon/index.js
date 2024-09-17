@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import StyledIcon from "./style.js";
-
+import SocialIcon from "./SocialIcon";
 
 function Icon({
     icon: IconComponent,
@@ -25,5 +25,6 @@ Icon.propsType = {
     color: PropTypes.string,
     opacity: PropTypes.number
 }
+Icon.Social = SocialIcon;
 
 export default Icon
