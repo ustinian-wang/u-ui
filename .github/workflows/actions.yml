@@ -19,4 +19,4 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: storybook-static # The folder the action should deploy.
+          folder: storybook-static # 这里不能写/开头的，不然会被当作虚拟机的根路径，导致找不到文件夹
