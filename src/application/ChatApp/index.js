@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import StyledChatApp, { Nav, Sidebar, Drawer, Content } from "./style";
-import NavBar from "components/NavBar";
-import MessageList from "components/MessageList";
-import Conversation from "components/Conversation";
-import Profile from "components/Profile";
-import ContactList from "components/ContactList";
-import FileList from "components/FileList";
-import NoteList from "components/NoteList";
-import EditProfile from "components/EditProfile";
-import Settings from "components/Settings";
-import BlockedList from "components/BlockedList";
-import VideoCall from "components/VideoCall";
+import NavBar from "organizations/NavBar";
+import MessageList from "organizations/MessageList";
+import Conversation from "organizations/Conversation";
+import Profile from "pages/Profile";
+import ContactList from "organizations/ContactList";
+import FileList from "organizations/FileList";
+import NoteList from "organizations/NoteList";
+import EditProfile from "pages/EditProfile";
+import Settings from "pages/Settings";
+import BlockedList from "organizations/BlockedList";
+import VideoCall from "organizations/VideoCall";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useTransition, animated } from "react-spring";
 
